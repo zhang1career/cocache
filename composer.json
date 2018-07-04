@@ -10,6 +10,16 @@
     "require-dev": {
         "phpunit/phpunit": "*"
     },
+    "autoload": {
+        "psr-4": {
+            "phplab\\cocache\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phplab\\cocache\\tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Zhang Rongjin",
