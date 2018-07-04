@@ -1,0 +1,19 @@
+{
+    "name": "phplab/cocache",
+    "description": "php code cache",
+    "keywords": ["cache"],
+    "homepage": "https://github.com/zhang1career/cocache",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "Zhang Rongjin",
+            "email": "zhang_career@foxmail.com"
+        }
+    ]
+}
