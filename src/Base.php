@@ -8,7 +8,7 @@
 
 namespace phplab\cocache;
 
-abstract class Base extends Cachable
+abstract class Base
 {
     public function cache_set($key, $val)
     {
