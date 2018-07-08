@@ -4,8 +4,11 @@
     "keywords": ["cache"],
     "homepage": "https://github.com/zhang1career/cocache",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "phplab/data": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "*"

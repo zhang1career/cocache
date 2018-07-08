@@ -8,6 +8,8 @@
 
 namespace phplab\cocache;
 
+use phplab\data\safearray\SafeArray;
+
 class Cachable
 {
     protected $data;
@@ -17,9 +19,9 @@ class Cachable
         $this->data = $data;
     }
 
-    public static function __set_state(array $data)
+    public static function __set_state(SafeArray $data)
     {
-        $obj = new static(isset($data['data']) ? $data['data'] : null);
+        $obj = new static($data['data']);
         return $obj;
     }
 }
