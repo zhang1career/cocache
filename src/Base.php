@@ -8,21 +8,8 @@
 
 namespace phplab\cocache;
 
-abstract class Base
+abstract class Base extends Cachable
 {
-    protected $data;
-
-    public function __construct($data = null)
-    {
-        $this->data = $data;
-    }
-
-    public static function __set_state(array $data)
-    {
-        $obj = new static($data);
-        return $obj;
-    }
-
     public function cache_set($key, $val)
     {
         $val = var_export($val, true);

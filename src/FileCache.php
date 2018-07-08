@@ -18,6 +18,10 @@ class FileCache extends Base
         rename($tmp, "/tmp/$key");
     }
 
+    /**
+     * @param $key
+     * @return null
+     */
     protected function _get($key)
     {
         @include "/tmp/$key";
