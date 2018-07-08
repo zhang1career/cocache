@@ -19,7 +19,7 @@ class Cachable
 
     public static function __set_state(array $data)
     {
-        $obj = new static($data);
+        $obj = new static(isset($data['data']) ? $data['data'] : null);
         return $obj;
     }
 }
