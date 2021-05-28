@@ -7,11 +7,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.0.0",
-        "phplab/data": "dev-master"
+        "php": ">=7.2.0",
+        "ext-apcu": "*",
+        "ext-zend-opcache": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "8.*"
     },
     "autoload": {
         "psr-4": {
